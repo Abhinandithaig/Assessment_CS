@@ -1,0 +1,82 @@
+{
+    "components": [
+        {
+            "id": "step1",
+            "name": "Step 1",
+            "dependencies": []
+        },
+        {
+            "id": "step2",
+            "name": "Step 2",
+            "dependencies": [
+                "step1"
+            ]
+        },
+        {
+            "id": "step3",
+            "name": "Step 3",
+            "dependencies": [
+                "step2"
+            ]
+        },
+        {
+            "id": "step4",
+            "name": "Step 4",
+            "dependencies": [
+                "step2"
+            ]
+        },
+        {
+            "id": "step5",
+            "name": "Step 5",
+            "dependencies": [
+                "step3"
+            ]
+        },
+        {
+            "id": "step6",
+            "name": "Step 6",
+            "dependencies": [
+                "step5"
+            ]
+        },
+        {
+            "id": "step7",
+            "name": "Step 7",
+            "dependencies": [
+                "step3"
+            ]
+        },
+        {
+            "id": "step8",
+            "name": "Step 8",
+            "dependencies": [
+                "step7"
+            ]
+        },
+        {
+            "id": "step9",
+            "name": "Step 9",
+            "dependencies": [
+                "step4"
+            ]
+        },
+        {
+            "id": "step10",
+            "name": "Step 10",
+            "dependencies": [
+                "step6",
+                "step8",
+                "step9"
+            ]
+        },
+        {
+            "id": "step11",
+            "name": "Step 11",
+            "dependencies": [
+                "step10"
+            ]
+        }
+    ],
+    "version": "1.0"
+}

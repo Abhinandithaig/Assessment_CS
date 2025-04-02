@@ -1,0 +1,32 @@
+{
+    "components": [
+        {
+            "id": "database",
+            "name": "Database Service",
+            "dependencies": []
+        },
+        {
+            "id": "cache",
+            "name": "Cache Service",
+            "dependencies": [
+                "database"
+            ]
+        },
+        {
+            "id": "auth",
+            "name": "Auth Service",
+            "dependencies": [
+                "database"
+            ]
+        },
+        {
+            "id": "api",
+            "name": "API Gateway",
+            "dependencies": [
+                "cache",
+                "auth"
+            ]
+        }
+    ],
+    "version": "1.0"
+}
